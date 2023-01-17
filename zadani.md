@@ -459,7 +459,7 @@ f = O(g) právě tehdy, když g = Omega(f)
 - výsledný strom opět reprezentuje aritmetický výraz
 - výsledný výraz zapište v prefixové a infixové notaci
 
-# Cvičení 6 - 16. 1. 2023
+# Cvičení 7 - 16. 1. 2023
 
 ## úloha 1
 
