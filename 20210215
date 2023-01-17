@@ -1,0 +1,62 @@
+## úloha 1
+
+Na vstupu je dána posloupnost celých čísel, čísla se mohou v posloupnosti libovolně opakovat. Navrhněte efektivní algoritmus, který určí druhou nejmenší hodnotu a počet jejích výskytů. Pracovávaná posloupnost není uložena v poli, prvky posloupnosti se postupně načítají ze standardního vstupu. Plný počet bodů bude udělen jen za korekntí řešení s minimálními časovými i prostorovými nároky.
+
+(a) Popište algoritmus (včetně datových struktur, které případně budete používat). Programový kód v Pythonu není povinný, slovní vysvětlení zvoleného postupu řešení naopak povinné je.
+
+(b) Zdůvodněte správnost algoritmu.
+
+(c) Odvoďte časovou a prostorovou složitost (v nejhorším příadě). Je vaše řešení asymptoticky optimální?
+
+Příklad:
+
+Vstup: 8 4 6 5 6 1 4 4 1 7
+
+Výstup: 4 3
+
+Poznámka:
+
+Pozor na to, že pokud si vstup načtete do pomocné datové struktury (typu pole), prostorová složitost se zvýší na Omega(n).
+
+## úloha 2
+
+Je zadán binární strom. Navrhněte efektivní algoritmus, který zjistí průměrnou výšku stromu, definovoanou jako součet délek všech cest z kořene do listu / počet listů.
+
+(a) Svoje řešení zapište jako funkci v Pythonu (která obdrží kořen binárního stormu a vrátí jeho průměrnou výšku), přitom využije definici třídy pro vrchol binárního stromu níže a kód opatřen komentáři,
+
+(b) zdůvodněte správnost.
+
+(c) pdvpďte časovou a prostorovou složitost.
+
+```
+class VrcholBinStromu:
+    """třída pro reprezentaci vrcholu binárního stromu""" 
+    def __init__(self, x = None, levy = None, pravy = None)
+        self.info = x # data 
+        self.levy = levy # levé dítě 
+        self.pravy = pravy # pravé dítě
+```
+
+Příklad:
+
+![](uloha6_strom.jpg "Vstup")
+
+Výstup: 3.2 ( = (3 + 3 + 2 + 4 + 4)/5 )
+
+## úloha 3
+
+Dokažte nebo vyvraťe:
+
+(a) Pro libovolné dvě funkce f, g: N -> R+ platí:
+f = O(g) právě tehdy, když g = Omega(f)
+
+(b) Je možné určit vzdálenost zadaných dvou vrcholů v grafu pomocí algoritmu procházení grafu do hloubky? Je to vhodná metoda pro řešeí tohoto problému? Své odopvědi zdůvodněte.
+
+(c) K zadanému aritmetickému výrazu v postfixové notaci:
+
+1 2 - 3 - 4 5 + * 6 7 - /
+
+- sestrojte odpovídající strom aritmetického výrazu
+- na kořen thoto stromu aplikujte operaci LL-rotace (?)
+- výsledný strom opět reprezentuje aritmetický výraz
+- výsledný výraz zapište v prefixové a infixové notaci
